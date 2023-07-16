@@ -37,11 +37,11 @@ namespace asm_DangKi
             this.iBtn_DonHang = new FontAwesome.Sharp.IconButton();
             this.iBtn_Home = new FontAwesome.Sharp.IconButton();
             this.pal_Menu = new System.Windows.Forms.Panel();
-            this.lab_Content = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.iBtn_Thoat = new FontAwesome.Sharp.IconButton();
             this.pal_Logo = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iBtn_Thoat = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.lab_Content = new System.Windows.Forms.Label();
             this.pal_Menu.SuspendLayout();
             this.pal_Logo.SuspendLayout();
             this.SuspendLayout();
@@ -190,16 +190,32 @@ namespace asm_DangKi
             this.pal_Menu.Size = new System.Drawing.Size(294, 746);
             this.pal_Menu.TabIndex = 0;
             // 
-            // lab_Content
+            // panel1
             // 
-            this.lab_Content.AutoSize = true;
-            this.lab_Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_Content.ForeColor = System.Drawing.Color.White;
-            this.lab_Content.Location = new System.Drawing.Point(71, 101);
-            this.lab_Content.Name = "lab_Content";
-            this.lab_Content.Size = new System.Drawing.Size(126, 29);
-            this.lab_Content.TabIndex = 0;
-            this.lab_Content.Text = "Trang chủ";
+            this.panel1.BackColor = System.Drawing.Color.Honeydew;
+            this.panel1.Location = new System.Drawing.Point(0, 580);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(297, 10);
+            this.panel1.TabIndex = 7;
+            // 
+            // iBtn_Thoat
+            // 
+            this.iBtn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iBtn_Thoat.FlatAppearance.BorderSize = 0;
+            this.iBtn_Thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iBtn_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.iBtn_Thoat.ForeColor = System.Drawing.Color.White;
+            this.iBtn_Thoat.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
+            this.iBtn_Thoat.IconColor = System.Drawing.Color.White;
+            this.iBtn_Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtn_Thoat.Location = new System.Drawing.Point(0, 618);
+            this.iBtn_Thoat.Name = "iBtn_Thoat";
+            this.iBtn_Thoat.Size = new System.Drawing.Size(294, 61);
+            this.iBtn_Thoat.TabIndex = 3;
+            this.iBtn_Thoat.Text = "Thoát";
+            this.iBtn_Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iBtn_Thoat.UseVisualStyleBackColor = true;
+            this.iBtn_Thoat.Click += new System.EventHandler(this.iBtn_Thoat_Click);
             // 
             // pal_Logo
             // 
@@ -228,39 +244,23 @@ namespace asm_DangKi
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
-            // iBtn_Thoat
+            // lab_Content
             // 
-            this.iBtn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iBtn_Thoat.FlatAppearance.BorderSize = 0;
-            this.iBtn_Thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iBtn_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.iBtn_Thoat.ForeColor = System.Drawing.Color.White;
-            this.iBtn_Thoat.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
-            this.iBtn_Thoat.IconColor = System.Drawing.Color.White;
-            this.iBtn_Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iBtn_Thoat.Location = new System.Drawing.Point(0, 618);
-            this.iBtn_Thoat.Name = "iBtn_Thoat";
-            this.iBtn_Thoat.Size = new System.Drawing.Size(294, 61);
-            this.iBtn_Thoat.TabIndex = 3;
-            this.iBtn_Thoat.Text = "Thoát";
-            this.iBtn_Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iBtn_Thoat.UseVisualStyleBackColor = true;
-            this.iBtn_Thoat.Click += new System.EventHandler(this.iBtn_Thoat_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Honeydew;
-            this.panel1.Location = new System.Drawing.Point(0, 580);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(297, 10);
-            this.panel1.TabIndex = 7;
+            this.lab_Content.AutoSize = true;
+            this.lab_Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_Content.ForeColor = System.Drawing.Color.White;
+            this.lab_Content.Location = new System.Drawing.Point(71, 101);
+            this.lab_Content.Name = "lab_Content";
+            this.lab_Content.Size = new System.Drawing.Size(126, 29);
+            this.lab_Content.TabIndex = 0;
+            this.lab_Content.Text = "Trang chủ";
             // 
             // frm_TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1582, 746);
+            this.ClientSize = new System.Drawing.Size(1672, 746);
             this.Controls.Add(this.pal_Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;

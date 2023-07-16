@@ -1,4 +1,4 @@
-create database WINFORM
+﻿create database WINFORM
 
 GO 
 CREATE TABLE TAIKHOAN(
@@ -40,3 +40,7 @@ create table DoiTac(
 	foreign key (MaHoaDon) references HoaDon1(MaHoaDon), 
 );
 
+INSERT INTO SanPham (MaSanPham, TenSanPham, GiaBan ,SoLuong, NgayNhapKho, HanSuDung, NgaySanXuat) VALUES 
+('SP003', N'Thịt đông lạnh', 50, 100 , '12/12/2022', '12/01/2023' , '10/12/2022')
+
+select * from SanPham
