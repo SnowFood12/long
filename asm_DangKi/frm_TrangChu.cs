@@ -80,6 +80,7 @@ namespace asm_DangKi
 
         private void iBtn_DonHang_Click(object sender, EventArgs e)
         {
+            // hiển thị trang đơn hàng 
             frm_DonHang form1 = new frm_DonHang();
             form1.MdiParent = this;
             form1.Show();
