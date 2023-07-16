@@ -1,0 +1,42 @@
+create database WINFORM
+
+GO 
+CREATE TABLE TAIKHOAN(
+	TenDangNhap varchar(30) primary key , 
+	MatKhau varchar(30) , 
+	SoDienThoai varchar(11) 
+);	
+
+create table SanPham(
+	MaSanPham varchar (20) primary key , 
+	TenSanPham nvarchar (50) , 
+	GiaBan SMALLMONEY , 
+	SoLuong tinyint ,
+	NgayNhapKho datetime , 
+	HanSuDung datetime , 
+	NgaySanXuat datetime, 
+);
+
+create table HoaDon (
+	MaHoaDon tinyint IDENTITY(1,1) primary key ,
+	TenHoaDon nvarchar(50)
+);
+create table HoaDon1 (
+	MaHoaDon tinyint IDENTITY(1,1) primary key ,
+	TenDoiTac nvarchar(50), 
+	SoLuongHang tinyint ,
+	MaSanPham varchar (20),
+	NgayTaoHoaDon datetime , 
+	TongTien SMALLMONEY, 
+	TenDangNhap varchar(30), 
+	SoDienThoaiDoiTac varchar(11),
+	DiaChiDoiTac nvarchar(50) ,
+	foreign key (TenDangNhap) references TAIKHOAN(TenDangNhap)
+);
+
+create table DoiTac(
+	MaDoiTac tinyint IDENTITY(1,1), 
+	MaHoaDon tinyint IDENTITY(1,1),
+	foreign key (MaHoaDon) references HoaDon1(MaHoaDon), 
+);
+
