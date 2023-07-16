@@ -70,26 +70,33 @@ namespace asm_DangKi
                 //================================================================
                 else
                 {
-                    // khai báo câu lệnh SQL
-                    string query = $"INSERT INTO SanPham VALUES (@Ma, @Ten, @Gia , @SoLuong , @NgayNhapKho , @HanSuDung , @NgaySanXuat)";
+                    try
+                    {
+                        // khai báo câu lệnh SQL
+                        string query = $"INSERT INTO SanPham VALUES (@Ma, @Ten, @Gia , @SoLuong , @NgayNhapKho , @HanSuDung , @NgaySanXuat)";
 
-                    SqlCommand cmd = new SqlCommand(query, conn);
+                        SqlCommand cmd = new SqlCommand(query, conn);
 
-                    // gán giá trị cho câu lệnh
-                    cmd.Parameters.AddWithValue("@Ma", txt_MaSanPham.Text);
-                    cmd.Parameters.AddWithValue("@Ten", txt_TenSanPham.Text);
-                    cmd.Parameters.AddWithValue("@Gia", txt_GiaTien.Text);
-                    cmd.Parameters.AddWithValue("@SoLuong", txt_SoLuong.Text);
-                    cmd.Parameters.AddWithValue("@NgayNhapKho", dtm_NgayNhapKho.Value.ToString("yyyy/MM/dd"));
-                    cmd.Parameters.AddWithValue("@HanSuDung", dtm_HanSuDung.Value.ToString("yyyy/MM/dd"));
-                    cmd.Parameters.AddWithValue("@NgaySanXuat", dtm_NgaySanXuat.Value.ToString("yyyy/MM/dd"));
+                        // gán giá trị cho câu lệnh
+                        cmd.Parameters.AddWithValue("@Ma", txt_MaSanPham.Text);
+                        cmd.Parameters.AddWithValue("@Ten", txt_TenSanPham.Text);
+                        cmd.Parameters.AddWithValue("@Gia", txt_GiaTien.Text);
+                        cmd.Parameters.AddWithValue("@SoLuong", txt_SoLuong.Text);
+                        cmd.Parameters.AddWithValue("@NgayNhapKho", dtm_NgayNhapKho.Value.ToString("yyyy/MM/dd"));
+                        cmd.Parameters.AddWithValue("@HanSuDung", dtm_HanSuDung.Value.ToString("yyyy/MM/dd"));
+                        cmd.Parameters.AddWithValue("@NgaySanXuat", dtm_NgaySanXuat.Value.ToString("yyyy/MM/dd"));
 
-                    // chạy câu lệnh SQL
-                    cmd.ExecuteNonQuery();
-                    LoadDuLieu(); // load lại dataview
+                        // chạy câu lệnh SQL
+                        cmd.ExecuteNonQuery();
+                        LoadDuLieu(); // load lại dataview
 
-                    // đóng kết nối SQL
-                    conn.Close();
+                        // đóng kết nối SQL
+                        conn.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Mã sản phẩm không được trùng !!!! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
             catch (FormatException) // bẫy lỗi khi nhập số lượng/giá bán không phải kí tự số 
