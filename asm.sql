@@ -12,9 +12,9 @@ create table SanPham(
 	TenSanPham nvarchar (50) , 
 	GiaBan SMALLMONEY , 
 	SoLuong tinyint ,
-	NgayNhapKho datetime , 
-	HanSuDung datetime , 
-	NgaySanXuat datetime, 
+	NgayNhapKho date , 
+	HanSuDung date , 
+	NgaySanXuat date, 
 );
 
 create table HoaDon (
@@ -40,7 +40,6 @@ create table DoiTac(
 	foreign key (MaHoaDon) references HoaDon1(MaHoaDon), 
 );
 
-INSERT INTO SanPham (MaSanPham, TenSanPham, GiaBan ,SoLuong, NgayNhapKho, HanSuDung, NgaySanXuat) VALUES 
-('SP003', N'Thịt đông lạnh', 50, 100 , '12/12/2022', '12/01/2023' , '10/12/2022')
+INSERT INTO SanPham  VALUES ('SP006', N'Thịt đông lạnh', 50, 100 , '12/12/2022', '12/01/2023' , '10/12/2022')
 
 select * from SanPham

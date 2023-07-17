@@ -93,7 +93,7 @@ namespace asm_DangKi
                         // đóng kết nối SQL
                         conn.Close();
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         MessageBox.Show("Mã sản phẩm không được trùng !!!! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
