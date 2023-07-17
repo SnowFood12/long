@@ -102,8 +102,12 @@ namespace asm_DangKi
         private void lab_Thoat_Click(object sender, EventArgs e)
         {
             Application.Exit(); // đóng form đăng nhập 
+<<<<<<< HEAD
             // lkajhdhfahlkafahf
 
+=======
+            // jashalahfalsahdlashd
+>>>>>>> nhanh1
         }
     }
 }

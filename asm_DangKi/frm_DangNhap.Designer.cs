@@ -125,7 +125,7 @@
             // txt_TenDangNhap
             // 
             this.txt_TenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TenDangNhap.Location = new System.Drawing.Point(206, 153);
+            this.txt_TenDangNhap.Location = new System.Drawing.Point(249, 150);
             this.txt_TenDangNhap.Name = "txt_TenDangNhap";
             this.txt_TenDangNhap.Size = new System.Drawing.Size(246, 32);
             this.txt_TenDangNhap.TabIndex = 9;
@@ -133,7 +133,7 @@
             // txt_MatKhau
             // 
             this.txt_MatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MatKhau.Location = new System.Drawing.Point(206, 215);
+            this.txt_MatKhau.Location = new System.Drawing.Point(249, 212);
             this.txt_MatKhau.Name = "txt_MatKhau";
             this.txt_MatKhau.Size = new System.Drawing.Size(246, 32);
             this.txt_MatKhau.TabIndex = 9;

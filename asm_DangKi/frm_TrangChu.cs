@@ -94,6 +94,7 @@ namespace asm_DangKi
 
         private void iBtn_DoiTac_Click(object sender, EventArgs e)
         {
+            // hiên thị trang đối tác 
             frm_DoiTac form1 = new frm_DoiTac();
             form1.MdiParent = this;
             form1.Show();

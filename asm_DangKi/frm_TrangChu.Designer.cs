@@ -38,14 +38,20 @@ namespace asm_DangKi
             this.iBtn_Home = new FontAwesome.Sharp.IconButton();
             this.pal_Menu = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.pal_Line = new System.Windows.Forms.Panel();
+=======
+>>>>>>> nhanh1
             this.iBtn_Thoat = new FontAwesome.Sharp.IconButton();
             this.pal_Logo = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.lab_Content = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.iBtn_NutThoat = new FontAwesome.Sharp.IconButton();
             this.iBtn_ThuNho = new FontAwesome.Sharp.IconButton();
             this.iBtn_PhongTo = new FontAwesome.Sharp.IconButton();
+=======
+>>>>>>> nhanh1
             this.pal_Menu.SuspendLayout();
             this.pal_Logo.SuspendLayout();
             this.SuspendLayout();
@@ -200,6 +206,7 @@ namespace asm_DangKi
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Honeydew;
+<<<<<<< HEAD
             this.panel1.Location = new System.Drawing.Point(0, 136);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(297, 5);
@@ -212,6 +219,12 @@ namespace asm_DangKi
             this.pal_Line.Name = "pal_Line";
             this.pal_Line.Size = new System.Drawing.Size(297, 5);
             this.pal_Line.TabIndex = 7;
+=======
+            this.panel1.Location = new System.Drawing.Point(0, 580);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(297, 10);
+            this.panel1.TabIndex = 7;
+>>>>>>> nhanh1
             // 
             // iBtn_Thoat
             // 
@@ -264,11 +277,16 @@ namespace asm_DangKi
             this.lab_Content.AutoSize = true;
             this.lab_Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_Content.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.lab_Content.Location = new System.Drawing.Point(72, 101);
+=======
+            this.lab_Content.Location = new System.Drawing.Point(71, 101);
+>>>>>>> nhanh1
             this.lab_Content.Name = "lab_Content";
             this.lab_Content.Size = new System.Drawing.Size(126, 29);
             this.lab_Content.TabIndex = 0;
             this.lab_Content.Text = "Trang chủ";
+<<<<<<< HEAD
             // 
             // iBtn_NutThoat
             // 
@@ -318,16 +336,22 @@ namespace asm_DangKi
             this.iBtn_PhongTo.TabIndex = 3;
             this.iBtn_PhongTo.UseVisualStyleBackColor = false;
             this.iBtn_PhongTo.Click += new System.EventHandler(this.iBtn_PhongTo_Click_1);
+=======
+>>>>>>> nhanh1
             // 
             // frm_TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1582, 746);
             this.Controls.Add(this.iBtn_NutThoat);
             this.Controls.Add(this.iBtn_ThuNho);
             this.Controls.Add(this.iBtn_PhongTo);
+=======
+            this.ClientSize = new System.Drawing.Size(1672, 746);
+>>>>>>> nhanh1
             this.Controls.Add(this.pal_Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
