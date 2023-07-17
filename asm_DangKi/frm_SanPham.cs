@@ -182,7 +182,7 @@ namespace asm_DangKi
         {
             LoadDuLieu();
         }
-        public void LoadDuLieu()
+        public void LoadDuLieu() 
         {
             conn = new SqlConnection(str);
             conn.Open();
@@ -195,7 +195,7 @@ namespace asm_DangKi
             dgv_DachSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgv_DachSanPham.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells; 
             conn.Close();
-        }
+        } 
         private void btn_ThemSanPham_Click(object sender, EventArgs e)
         {
             try
