@@ -17,13 +17,13 @@ namespace asm_DangKi
             InitializeComponent();
             trangchucon(); 
         }
-
-        private void iBtn_NutThoat_Click(object sender, EventArgs e)
+        private void iBtn_ThuNho_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Nút thu về tabbar
+            this.WindowState = FormWindowState.Minimized;
         }
         private bool thuPhong = false;
-        private void iBtn_PhongTo_Click(object sender, EventArgs e)
+        private void iBtn_PhongTo_Click_1(object sender, EventArgs e)
         {
             //Nút thu phóng
             if (thuPhong == false)
@@ -38,10 +38,14 @@ namespace asm_DangKi
             }
         }
 
+        private void iBtn_NutThoat_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void iBtn_ThuNho_Click(object sender, EventArgs e)
         {
-            //Nút thu về tabbar
-            this.WindowState = FormWindowState.Minimized;
+          
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -110,5 +114,7 @@ namespace asm_DangKi
         {
             Application.Exit();
         }
+
+        
     }
 }

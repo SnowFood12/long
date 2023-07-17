@@ -37,11 +37,15 @@ namespace asm_DangKi
             this.iBtn_DonHang = new FontAwesome.Sharp.IconButton();
             this.iBtn_Home = new FontAwesome.Sharp.IconButton();
             this.pal_Menu = new System.Windows.Forms.Panel();
-            this.lab_Content = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pal_Line = new System.Windows.Forms.Panel();
+            this.iBtn_Thoat = new FontAwesome.Sharp.IconButton();
             this.pal_Logo = new System.Windows.Forms.Panel();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iBtn_Thoat = new FontAwesome.Sharp.IconButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.lab_Content = new System.Windows.Forms.Label();
+            this.iBtn_NutThoat = new FontAwesome.Sharp.IconButton();
+            this.iBtn_ThuNho = new FontAwesome.Sharp.IconButton();
+            this.iBtn_PhongTo = new FontAwesome.Sharp.IconButton();
             this.pal_Menu.SuspendLayout();
             this.pal_Logo.SuspendLayout();
             this.SuspendLayout();
@@ -49,11 +53,13 @@ namespace asm_DangKi
             // lbl_Logo
             // 
             this.lbl_Logo.AutoSize = true;
-            this.lbl_Logo.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Logo.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.lbl_Logo.CausesValidation = false;
+            this.lbl_Logo.Font = new System.Drawing.Font("UTM American Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Logo.ForeColor = System.Drawing.Color.White;
-            this.lbl_Logo.Location = new System.Drawing.Point(48, 48);
+            this.lbl_Logo.Location = new System.Drawing.Point(12, 31);
             this.lbl_Logo.Name = "lbl_Logo";
-            this.lbl_Logo.Size = new System.Drawing.Size(173, 38);
+            this.lbl_Logo.Size = new System.Drawing.Size(212, 56);
             this.lbl_Logo.TabIndex = 0;
             this.lbl_Logo.Text = "SnowFood";
             // 
@@ -110,7 +116,7 @@ namespace asm_DangKi
             this.iBtn_DoiTac.Name = "iBtn_DoiTac";
             this.iBtn_DoiTac.Size = new System.Drawing.Size(294, 80);
             this.iBtn_DoiTac.TabIndex = 3;
-            this.iBtn_DoiTac.Text = "Đối tác  ";
+            this.iBtn_DoiTac.Text = "Đối tác        ";
             this.iBtn_DoiTac.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtn_DoiTac.UseVisualStyleBackColor = true;
             this.iBtn_DoiTac.Click += new System.EventHandler(this.iBtn_DoiTac_Click);
@@ -129,7 +135,7 @@ namespace asm_DangKi
             this.iBtn_SanPham.Name = "iBtn_SanPham";
             this.iBtn_SanPham.Size = new System.Drawing.Size(294, 80);
             this.iBtn_SanPham.TabIndex = 4;
-            this.iBtn_SanPham.Text = "Sản phẩm";
+            this.iBtn_SanPham.Text = "Sản phẩm  ";
             this.iBtn_SanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtn_SanPham.UseVisualStyleBackColor = true;
             this.iBtn_SanPham.Click += new System.EventHandler(this.iBtn_SanPham_Click);
@@ -148,7 +154,7 @@ namespace asm_DangKi
             this.iBtn_DonHang.Name = "iBtn_DonHang";
             this.iBtn_DonHang.Size = new System.Drawing.Size(294, 80);
             this.iBtn_DonHang.TabIndex = 5;
-            this.iBtn_DonHang.Text = "Đơn hàng";
+            this.iBtn_DonHang.Text = "Đơn hàng ";
             this.iBtn_DonHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iBtn_DonHang.UseVisualStyleBackColor = true;
             this.iBtn_DonHang.Click += new System.EventHandler(this.iBtn_DonHang_Click);
@@ -174,8 +180,9 @@ namespace asm_DangKi
             // 
             // pal_Menu
             // 
-            this.pal_Menu.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.pal_Menu.BackColor = System.Drawing.Color.MediumTurquoise;
             this.pal_Menu.Controls.Add(this.panel1);
+            this.pal_Menu.Controls.Add(this.pal_Line);
             this.pal_Menu.Controls.Add(this.iBtn_Thoat);
             this.pal_Menu.Controls.Add(this.iBtn_Home);
             this.pal_Menu.Controls.Add(this.iBtn_DonHang);
@@ -190,16 +197,40 @@ namespace asm_DangKi
             this.pal_Menu.Size = new System.Drawing.Size(294, 746);
             this.pal_Menu.TabIndex = 0;
             // 
-            // lab_Content
+            // panel1
             // 
-            this.lab_Content.AutoSize = true;
-            this.lab_Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lab_Content.ForeColor = System.Drawing.Color.White;
-            this.lab_Content.Location = new System.Drawing.Point(71, 101);
-            this.lab_Content.Name = "lab_Content";
-            this.lab_Content.Size = new System.Drawing.Size(126, 29);
-            this.lab_Content.TabIndex = 0;
-            this.lab_Content.Text = "Trang chủ";
+            this.panel1.BackColor = System.Drawing.Color.Honeydew;
+            this.panel1.Location = new System.Drawing.Point(0, 136);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(297, 5);
+            this.panel1.TabIndex = 8;
+            // 
+            // pal_Line
+            // 
+            this.pal_Line.BackColor = System.Drawing.Color.Honeydew;
+            this.pal_Line.Location = new System.Drawing.Point(0, 580);
+            this.pal_Line.Name = "pal_Line";
+            this.pal_Line.Size = new System.Drawing.Size(297, 5);
+            this.pal_Line.TabIndex = 7;
+            // 
+            // iBtn_Thoat
+            // 
+            this.iBtn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iBtn_Thoat.FlatAppearance.BorderSize = 0;
+            this.iBtn_Thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iBtn_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.iBtn_Thoat.ForeColor = System.Drawing.Color.White;
+            this.iBtn_Thoat.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
+            this.iBtn_Thoat.IconColor = System.Drawing.Color.White;
+            this.iBtn_Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtn_Thoat.Location = new System.Drawing.Point(0, 618);
+            this.iBtn_Thoat.Name = "iBtn_Thoat";
+            this.iBtn_Thoat.Size = new System.Drawing.Size(294, 61);
+            this.iBtn_Thoat.TabIndex = 3;
+            this.iBtn_Thoat.Text = "Thoát";
+            this.iBtn_Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iBtn_Thoat.UseVisualStyleBackColor = true;
+            this.iBtn_Thoat.Click += new System.EventHandler(this.iBtn_Thoat_Click);
             // 
             // pal_Logo
             // 
@@ -228,32 +259,65 @@ namespace asm_DangKi
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
-            // iBtn_Thoat
+            // lab_Content
             // 
-            this.iBtn_Thoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iBtn_Thoat.FlatAppearance.BorderSize = 0;
-            this.iBtn_Thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iBtn_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.iBtn_Thoat.ForeColor = System.Drawing.Color.White;
-            this.iBtn_Thoat.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
-            this.iBtn_Thoat.IconColor = System.Drawing.Color.White;
-            this.iBtn_Thoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iBtn_Thoat.Location = new System.Drawing.Point(0, 618);
-            this.iBtn_Thoat.Name = "iBtn_Thoat";
-            this.iBtn_Thoat.Size = new System.Drawing.Size(294, 61);
-            this.iBtn_Thoat.TabIndex = 3;
-            this.iBtn_Thoat.Text = "Thoát";
-            this.iBtn_Thoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iBtn_Thoat.UseVisualStyleBackColor = true;
-            this.iBtn_Thoat.Click += new System.EventHandler(this.iBtn_Thoat_Click);
+            this.lab_Content.AutoSize = true;
+            this.lab_Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lab_Content.ForeColor = System.Drawing.Color.White;
+            this.lab_Content.Location = new System.Drawing.Point(72, 101);
+            this.lab_Content.Name = "lab_Content";
+            this.lab_Content.Size = new System.Drawing.Size(126, 29);
+            this.lab_Content.TabIndex = 0;
+            this.lab_Content.Text = "Trang chủ";
             // 
-            // panel1
+            // iBtn_NutThoat
             // 
-            this.panel1.BackColor = System.Drawing.Color.Honeydew;
-            this.panel1.Location = new System.Drawing.Point(0, 580);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(297, 10);
-            this.panel1.TabIndex = 7;
+            this.iBtn_NutThoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iBtn_NutThoat.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.iBtn_NutThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.iBtn_NutThoat.FlatAppearance.BorderSize = 0;
+            this.iBtn_NutThoat.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.iBtn_NutThoat.IconColor = System.Drawing.Color.White;
+            this.iBtn_NutThoat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtn_NutThoat.IconSize = 30;
+            this.iBtn_NutThoat.Location = new System.Drawing.Point(1534, 3);
+            this.iBtn_NutThoat.Name = "iBtn_NutThoat";
+            this.iBtn_NutThoat.Size = new System.Drawing.Size(45, 45);
+            this.iBtn_NutThoat.TabIndex = 4;
+            this.iBtn_NutThoat.UseVisualStyleBackColor = false;
+            this.iBtn_NutThoat.Click += new System.EventHandler(this.iBtn_NutThoat_Click_1);
+            // 
+            // iBtn_ThuNho
+            // 
+            this.iBtn_ThuNho.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iBtn_ThuNho.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.iBtn_ThuNho.FlatAppearance.BorderSize = 0;
+            this.iBtn_ThuNho.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.iBtn_ThuNho.IconColor = System.Drawing.Color.White;
+            this.iBtn_ThuNho.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtn_ThuNho.IconSize = 30;
+            this.iBtn_ThuNho.Location = new System.Drawing.Point(1432, 3);
+            this.iBtn_ThuNho.Name = "iBtn_ThuNho";
+            this.iBtn_ThuNho.Size = new System.Drawing.Size(45, 45);
+            this.iBtn_ThuNho.TabIndex = 5;
+            this.iBtn_ThuNho.UseVisualStyleBackColor = false;
+            this.iBtn_ThuNho.Click += new System.EventHandler(this.iBtn_ThuNho_Click_1);
+            // 
+            // iBtn_PhongTo
+            // 
+            this.iBtn_PhongTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iBtn_PhongTo.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.iBtn_PhongTo.FlatAppearance.BorderSize = 0;
+            this.iBtn_PhongTo.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.iBtn_PhongTo.IconColor = System.Drawing.Color.White;
+            this.iBtn_PhongTo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtn_PhongTo.IconSize = 30;
+            this.iBtn_PhongTo.Location = new System.Drawing.Point(1483, 3);
+            this.iBtn_PhongTo.Name = "iBtn_PhongTo";
+            this.iBtn_PhongTo.Size = new System.Drawing.Size(45, 45);
+            this.iBtn_PhongTo.TabIndex = 3;
+            this.iBtn_PhongTo.UseVisualStyleBackColor = false;
+            this.iBtn_PhongTo.Click += new System.EventHandler(this.iBtn_PhongTo_Click_1);
             // 
             // frm_TrangChu
             // 
@@ -261,6 +325,9 @@ namespace asm_DangKi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1582, 746);
+            this.Controls.Add(this.iBtn_NutThoat);
+            this.Controls.Add(this.iBtn_ThuNho);
+            this.Controls.Add(this.iBtn_PhongTo);
             this.Controls.Add(this.pal_Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
@@ -287,6 +354,10 @@ namespace asm_DangKi
         private System.Windows.Forms.Label lab_Content;
         private FontAwesome.Sharp.IconButton iBtn_SanPham;
         private FontAwesome.Sharp.IconButton iBtn_Thoat;
+        private System.Windows.Forms.Panel pal_Line;
+        private FontAwesome.Sharp.IconButton iBtn_NutThoat;
+        private FontAwesome.Sharp.IconButton iBtn_ThuNho;
+        private FontAwesome.Sharp.IconButton iBtn_PhongTo;
         private System.Windows.Forms.Panel panel1;
     }
 }

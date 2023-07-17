@@ -6,4 +6,3 @@ CREATE TABLE TAIKHOAN(
 	MatKhau varchar(30) , 
 	SoDienThoai varchar(11) 
 );	
-select * from TAIKHOAN where 
